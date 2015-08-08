@@ -1,0 +1,32 @@
+{
+  "name": "co-talk-examples",
+  "version": "1.0.0",
+  "description": "Example Code from my talk on Javascript Coroutines",
+  "main": "coroutines.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviskaufman/co-talk-examples.git"
+  },
+  "keywords": [
+    "coroutines",
+    "talks",
+    "teaching",
+    "tutorial",
+    "learn",
+    "async"
+  ],
+  "author": "Travis Kaufman <travis.kaufman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traviskaufman/co-talk-examples/issues"
+  },
+  "homepage": "https://github.com/traviskaufman/co-talk-examples#readme",
+  "dependencies": {
+    "moment": "^2.10.6",
+    "prompt": "^0.2.14",
+    "request": "^2.60.0"
+  }
+}
