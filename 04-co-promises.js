@@ -3,12 +3,13 @@
 import fs from 'fs';
 import path from 'path';
 
-import co from 'co';
 import prompt from 'prompt';
 import request from 'request';
 import moment from 'moment';
 
-co(function*() {
+import coroutine from './coroutine';
+
+coroutine(function*() {
   const name = yield askForUserName();
   const repos = yield fetchRepos(name);
   console.log(`\n***Ten Most Recently Pushed Repos for ${name} ***\n`);
@@ -38,7 +39,7 @@ function fetchRepos(name, cb) {
       if (res && res.statusCode >= 400) {
         return Promise.reject(new Error(body));
       }
-      return { name, repos: JSON.parse(body) };
+      return JSON.parse(body);
     });
 }
 
