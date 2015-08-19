@@ -12,7 +12,7 @@ function retry(fn, maxAttempts=3, backoffTime=1000) {
       err = null;
       try {
         v = fn();
-        if (typeof v.then === 'function') {
+        if (v && typeof v.then === 'function') {
           v = yield v;
         }
         break;
