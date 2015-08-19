@@ -26,8 +26,12 @@
   "homepage": "https://github.com/traviskaufman/co-talk-examples#readme",
   "dependencies": {
     "async": "^1.4.2",
+    "bluebird": "^2.9.34",
     "co": "^4.6.0",
+    "debug": "^2.2.0",
     "moment": "^2.10.6",
+    "pg": "^4.4.1",
+    "pg-cursor": "^1.0.0",
     "prompt": "^0.2.14",
     "request": "^2.60.0"
   }
